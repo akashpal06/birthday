@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="description" content="A special birthday wish for Aruhi">
+  <title>Happy Birthday Aruhi ✨</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400&family=Outfit:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+  <!-- Ambient background elements -->
+  <div class="ambient" aria-hidden="true">
+    <div class="cloud cloud-1"></div>
+    <div class="cloud cloud-2"></div>
+    <div class="cloud cloud-3"></div>
+    <div class="stars-container" id="stars"></div>
+    <div class="petals-container" id="petals"></div>
+    <div class="butterflies-container" id="butterflies"></div>
+    <div class="balloons-container" id="balloons"></div>
+  </div>
+
+  <!-- Progress indicator -->
+  <nav class="progress-nav" aria-label="Page progress">
+    <div class="progress-bar">
+      <div class="progress-fill" id="progressFill"></div>
+    </div>
+    <div class="progress-dots" id="progressDots"></div>
+  </nav>
+
+  <!-- Floating music button -->
+  <button class="music-btn" id="musicBtn" aria-label="Toggle background music" title="Play music">
+    <span class="music-icon music-off">🎵</span>
+    <span class="music-icon music-on hidden">🎶</span>
+    <span class="music-waves" aria-hidden="true">
+      <span></span><span></span><span></span>
+    </span>
+  </button>
+
+  <!-- Main page container -->
+  <main class="pages-wrapper" id="pagesWrapper">
+    <!-- PAGE 1: Birthday Cover -->
+    <section class="page page-active" data-page="0" aria-label="Birthday cover">
+      <div class="page-content cover-page">
+        <div class="photo-placeholder cover-photo glass-card" id="coverPhoto">
+          <!-- To add a photo: place image in images/ folder and uncomment below -->
+          <img src="https://pngfre.com/wp-content/uploads/anime-girl-18-746x1024.png" alt="Aruhi">
+          <!-- <div class="placeholder-inner">
+            <span class="placeholder-icon">📸</span>
+            <span class="placeholder-text">https://pngfre.com/anime-girl-png/</span>
+          </div> -->
+        </div>
+        <h1 class="heading-serif cover-heading">
+          <span class="emoji-float">🎂</span>
+          Happy Birthday Aruhi
+          <span class="emoji-float delay">🎉</span>
+        </h1>
+        <p class="subheading cover-sub">
+          Wishing you happiness, good health, success and beautiful memories ahead ✨
+        </p>
+        <p class="date-badge glass-pill">10 July 💖</p>
+        <p class="swipe-hint">
+          <span class="swipe-arrow">↓</span>
+          Swipe to continue 🌙
+        </p>
+      </div>
+    </section>
+
+    <!-- PAGE 2: A Little Appreciation -->
+    <section class="page" data-page="1" aria-label="A little appreciation">
+      <div class="page-content appreciation-page">
+        <div class="photo-placeholder circle-photo glass-card" id="circlePhoto">
+          <!-- To add a photo: place image in images/ folder and uncomment below -->
+          <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTnDku9BY8OWrmQTSlHuzDm9v2lHBccLagrAKTSHNrKPA&s=10" alt="Aruhi">
+          <div class="placeholder-inner">
+            <span class="placeholder-icon">🌸</span>
+            <span class="placeholder-text">Add photo</span>
+          </div>
+        </div>
+        <h2 class="heading-serif section-heading">🌸 A Little Appreciation</h2>
+        <div class="glass-card text-card">
+          <p>It has been nice getting to know you over these days.</p>
+          <p>You somehow manage to stay busy all day, take care of your puppy and still maintain positive energy.</p>
+          <p>I genuinely enjoy our conversations and the little moments we've shared.</p>
+          <p class="highlight-line">I hope this year brings you happiness, growth and countless beautiful memories.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 3: Things That Make You Unique -->
+    <section class="page" data-page="2" aria-label="Things that make you unique">
+      <div class="page-content unique-page">
+        <h2 class="heading-serif section-heading">Things That Make You Unique</h2>
+        <p class="section-sub">Every little detail about you ✨</p>
+        <div class="cards-grid">
+          <div class="trait-card glass-card" style="--delay: 0">
+            <span class="trait-emoji">🐶</span>
+            <span class="trait-label">Puppy Lover</span>
+          </div>
+          <div class="trait-card glass-card" style="--delay: 1">
+            <span class="trait-emoji">✨</span>
+            <span class="trait-label">Positive Energy</span>
+          </div>
+          <div class="trait-card glass-card" style="--delay: 2">
+            <span class="trait-emoji">🌙</span>
+            <span class="trait-label">Always Busy</span>
+          </div>
+          <div class="trait-card glass-card" style="--delay: 3">
+            <span class="trait-emoji">😊</span>
+            <span class="trait-label">Easy To Talk To</span>
+          </div>
+          <div class="trait-card glass-card" style="--delay: 4">
+            <span class="trait-emoji">🎂</span>
+            <span class="trait-label">Birthday Girl</span>
+          </div>
+          <div class="trait-card glass-card" style="--delay: 5">
+            <span class="trait-emoji">🌸</span>
+            <span class="trait-label">Good Vibes</span>
+          </div>
+          <div class="trait-card glass-card" style="--delay: 6">
+            <span class="trait-emoji">💫</span>
+            <span class="trait-label">Memorable Person</span>
+          </div>
+          <div class="trait-card glass-card" style="--delay: 7">
+            <span class="trait-emoji">💖</span>
+            <span class="trait-label">Beautiful Energy</span>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 4: Let's Get To Know You Better -->
+    <section class="page" data-page="3" aria-label="Get to know you better">
+      <div class="page-content quiz-page">
+        <h2 class="heading-serif section-heading">😊 Let's Get To Know You Better</h2>
+        <p class="section-sub">Tap your answers — just for fun!</p>
+        <form class="quiz-form" id="quizForm">
+          <div class="quiz-item glass-card">
+            <label>🍕 Favourite food?</label>
+            <input type="text" name="fav_food" placeholder="Type here..." autocomplete="off">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>🥗 Veg, Non Veg or Both?</label>
+            <div class="option-chips">
+              <button type="button" class="chip" data-value="Veg">Veg</button>
+              <button type="button" class="chip" data-value="Non Veg">Non Veg</button>
+              <button type="button" class="chip" data-value="Both">Both</button>
+            </div>
+            <input type="hidden" name="food_type">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>☕ Tea or Coffee?</label>
+            <div class="option-chips">
+              <button type="button" class="chip" data-value="Tea">Tea ☕</button>
+              <button type="button" class="chip" data-value="Coffee">Coffee ☕</button>
+              <button type="button" class="chip" data-value="Both">Both</button>
+            </div>
+            <input type="hidden" name="tea_coffee">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>🍦 Ice cream or Dessert?</label>
+            <div class="option-chips">
+              <button type="button" class="chip" data-value="Ice cream">Ice cream</button>
+              <button type="button" class="chip" data-value="Dessert">Dessert</button>
+              <button type="button" class="chip" data-value="Both">Both</button>
+            </div>
+            <input type="hidden" name="ice_dessert">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>🎶 Favourite music type?</label>
+            <input type="text" name="music" placeholder="Bollywood, Pop, Lo-fi..." autocomplete="off">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>🎥 Movies or Series?</label>
+            <div class="option-chips">
+              <button type="button" class="chip" data-value="Movies">Movies</button>
+              <button type="button" class="chip" data-value="Series">Series</button>
+              <button type="button" class="chip" data-value="Both">Both</button>
+            </div>
+            <input type="hidden" name="movies_series">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>🌙 Morning person or Night owl?</label>
+            <div class="option-chips">
+              <button type="button" class="chip" data-value="Morning">Morning 🌅</button>
+              <button type="button" class="chip" data-value="Night owl">Night owl 🌙</button>
+            </div>
+            <input type="hidden" name="morning_night">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>🌧️ Rain or Winter?</label>
+            <div class="option-chips">
+              <button type="button" class="chip" data-value="Rain">Rain 🌧️</button>
+              <button type="button" class="chip" data-value="Winter">Winter ❄️</button>
+              <button type="button" class="chip" data-value="Both">Both</button>
+            </div>
+            <input type="hidden" name="rain_winter">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>✈️ Mountains or Beaches?</label>
+            <div class="option-chips">
+              <button type="button" class="chip" data-value="Mountains">Mountains ⛰️</button>
+              <button type="button" class="chip" data-value="Beaches">Beaches 🏖️</button>
+              <button type="button" class="chip" data-value="Both">Both</button>
+            </div>
+            <input type="hidden" name="mountains_beaches">
+          </div>
+          <div class="quiz-item glass-card">
+            <label>😄 One thing that always makes you happy?</label>
+            <input type="text" name="happy_thing" placeholder="Your puppy? Music? Food?..." autocomplete="off">
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <!-- PAGE 5: Future Hangout -->
+    <section class="page" data-page="4" aria-label="Future hangout ideas">
+      <div class="page-content hangout-page">
+        <h2 class="heading-serif section-heading">☕ If We Ever Plan Something Someday</h2>
+        <p class="section-sub hangout-sub">Just for fun 😄</p>
+
+        <div class="hangout-section glass-card">
+          <h3 class="hangout-question">When are you usually free?</h3>
+          <div class="time-options">
+            <button type="button" class="time-chip" data-group="time" data-value="Morning">Morning 🌅</button>
+            <button type="button" class="time-chip" data-group="time" data-value="Afternoon">Afternoon ☀️</button>
+            <button type="button" class="time-chip" data-group="time" data-value="Evening">Evening 🌇</button>
+            <button type="button" class="time-chip" data-group="time" data-value="Night">Night 🌙</button>
+          </div>
+        </div>
+
+        <div class="hangout-section glass-card">
+          <h3 class="hangout-question">What would you enjoy more?</h3>
+          <div class="activity-grid">
+            <button type="button" class="activity-card" data-group="activity" data-value="Coffee">
+              <span class="activity-emoji">☕</span>
+              <span>Coffee</span>
+            </button>
+            <button type="button" class="activity-card" data-group="activity" data-value="Ice Cream">
+              <span class="activity-emoji">🍦</span>
+              <span>Ice Cream</span>
+            </button>
+            <button type="button" class="activity-card" data-group="activity" data-value="Food">
+              <span class="activity-emoji">🍕</span>
+              <span>Food</span>
+            </button>
+            <button type="button" class="activity-card" data-group="activity" data-value="Cold Coffee">
+              <span class="activity-emoji">🥤</span>
+              <span>Cold Coffee</span>
+            </button>
+            <button type="button" class="activity-card" data-group="activity" data-value="Walk">
+              <span class="activity-emoji">🚶</span>
+              <span>Walk</span>
+            </button>
+            <button type="button" class="activity-card" data-group="activity" data-value="Games">
+              <span class="activity-emoji">🎮</span>
+              <span>Games</span>
+            </button>
+          </div>
+        </div>
+
+        <div class="quiz-item glass-card extra-notes-card">
+          <label for="extraNotes">💬 Anything else you'd like to share?</label>
+          <textarea id="extraNotes" name="extra_note" rows="3" placeholder="Optional — write anything here..." autocomplete="off"></textarea>
+        </div>
+
+        <p class="no-pressure glass-pill">
+          No pressure 😊<br>
+          <span class="no-pressure-sub">Just thought it would be fun to know you a little better.</span>
+        </p>
+
+        <div class="submit-section">
+          <button class="submit-surprise-btn" id="submitSurpriseBtn" type="button">
+            <span class="submit-btn-shine" aria-hidden="true"></span>
+            <span class="submit-btn-text">✨ Submit &amp; Unlock Final Surprise</span>
+            <span class="submit-btn-loading hidden" aria-hidden="true">
+              <span class="loading-dot"></span>
+              <span class="loading-dot"></span>
+              <span class="loading-dot"></span>
+            </span>
+          </button>
+          <p class="submit-hint">Your answers will be saved privately ✨</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- PAGE 6: Final -->
+    <section class="page" data-page="5" aria-label="Final message">
+      <div class="page-content final-page">
+        <div class="final-sparkles" aria-hidden="true">✨ 💫 ✨</div>
+        <h2 class="heading-serif section-heading final-heading">✨ This Is Just The Beginning</h2>
+        <div class="glass-card final-message">
+          <p>Thank you for being part of some nice moments already.</p>
+          <p>I hope this birthday becomes one of your happiest ones.</p>
+          <p class="highlight-line">Keep smiling and keep being yourself 😊</p>
+        </div>
+        <button class="smile-btn" id="smileBtn" type="button">
+          <span class="smile-btn-text">😊 This Made Me Smile</span>
+        </button>
+        <div class="mission-popup hidden" id="missionPopup">
+          <div class="mission-content glass-card">
+            <span class="mission-emoji">🎉</span>
+            <p>Mission accomplished 🎉</p>
+            <div class="confetti-burst" aria-hidden="true"></div>
+          </div>
+        </div>
+        <footer class="site-footer">
+          Made with good wishes by Akash 💖
+        </footer>
+      </div>
+    </section>
+  </main>
+
+  <!-- Navigation controls -->
+  <div class="nav-controls">
+    <button class="nav-btn nav-prev hidden" id="navPrev" aria-label="Previous page">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M15 18l-6-6 6-6"/></svg>
+    </button>
+    <button class="nav-btn nav-next" id="navNext" aria-label="Next page">
+      <span class="nav-next-text">Continue</span>
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 18l6-6-6-6"/></svg>
+    </button>
+  </div>
+
+  <!-- Hidden form for EmailJS submission -->
+  <form id="hiddenEmailForm" class="visually-hidden" aria-hidden="true" tabindex="-1">
+    <input type="hidden" name="name" value="Aruhi">
+    <input type="hidden" name="to_email" id="field_to_email">
+    <input type="hidden" name="subject" id="field_subject">
+    <input type="hidden" name="fav_food" id="field_fav_food">
+    <input type="hidden" name="food_type" id="field_food_type">
+    <input type="hidden" name="tea_coffee" id="field_tea_coffee">
+    <input type="hidden" name="ice_dessert" id="field_ice_dessert">
+    <input type="hidden" name="music" id="field_music">
+    <input type="hidden" name="movies_series" id="field_movies_series">
+    <input type="hidden" name="morning_night" id="field_morning_night">
+    <input type="hidden" name="rain_winter" id="field_rain_winter">
+    <input type="hidden" name="mountains_beaches" id="field_mountains_beaches">
+    <input type="hidden" name="happy_thing" id="field_happy_thing">
+    <input type="hidden" name="preferred_time" id="field_preferred_time">
+    <input type="hidden" name="preferred_outing" id="field_preferred_outing">
+    <input type="hidden" name="extra_note" id="field_extra_note">
+    <textarea name="message" id="field_message"></textarea>
+  </form>
+
+  <!-- Submit feedback overlays -->
+  <div class="feedback-overlay hidden" id="successOverlay" role="alertdialog" aria-live="polite">
+    <div class="feedback-card glass-card feedback-success">
+      <div class="feedback-icon success-bounce">🎉</div>
+      <p class="feedback-title">Thank you. This made my day 😊</p>
+      <p class="feedback-sub">Unlocking your final surprise...</p>
+      <div class="success-sparkles" aria-hidden="true">✨ 💖 ✨</div>
+    </div>
+  </div>
+
+  <div class="feedback-overlay hidden" id="errorOverlay" role="alertdialog" aria-live="assertive">
+    <div class="feedback-card glass-card feedback-error">
+      <div class="feedback-icon">⚠️</div>
+      <p class="feedback-title">Something went wrong. Please try again.</p>
+      <button class="retry-btn" id="retrySubmitBtn" type="button">Try Again</button>
+    </div>
+  </div>
+
+  <!-- Hidden audio for background music (royalty-free tone) -->
+  <audio id="bgMusic" loop preload="none">
+    <!-- Add your own soft track: place birthday-music.mp3 in the audio/ folder -->
+    <source src="audio/birthday-music.mp3" type="audio/mpeg">
+    <source src="https://cdn.pixabay.com/download/audio/2022/05/27/audio_1808fbf07a.mp3?filename=soft-piano-ambient-116636.mp3" type="audio/mpeg">
+  </audio>
+
+  <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+  <script src="js/email-config.js"></script>
+  <script src="js/script.js"></script>
+</body>
+</html>
