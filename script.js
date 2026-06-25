@@ -460,6 +460,20 @@
     }, { passive: true });
   });
 
+  const emojis = ["🎈","🎉","💖","✨","🌸","🎂","🎁","🦋"];
+
+for(let i = 0; i < 20; i++){
+    const span = document.createElement("span");
+    span.innerHTML = emojis[Math.floor(Math.random()*emojis.length)];
+
+    span.style.position = "absolute";
+    span.style.left = Math.random()*100 + "%";
+    span.style.top = Math.random()*100 + "%";
+    span.style.fontSize = (20 + Math.random()*20) + "px";
+    span.style.animation = `float ${5 + Math.random()*5}s infinite ease-in-out`;
+
+    document.body.appendChild(span);
+}
   /* ---- Init ---- */
   initEmailJS();
   initProgressDots();
